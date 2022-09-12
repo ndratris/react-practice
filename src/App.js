@@ -1,5 +1,6 @@
+import React from "react";
 import "./App.css";
-import ExpenseList from "./components/ExpenseList";
+import ExpenseList from "./components/Expenses/ExpenseList";
 
 function App() {
   const expenses = [
@@ -23,12 +24,17 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+  // return React.createElement(
+  //   "div",
+  //   {},
+  //   React.createElement("h2", {}, "Let's Get Started"),
+  //   React.createElement(ExpenseList, {item: expenses })
+  // );
   return (
     <div>
       <h2>Hello React Js</h2>
       <ExpenseList item={expenses}/>
-      
-      
+
     </div>
   );
 }
